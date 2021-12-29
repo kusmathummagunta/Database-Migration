@@ -1,0 +1,7 @@
+SELECT name FROM sqlite_temp_master WHERE type='table';   ---- for list of tables in any database inside SQLite3
+
+PRAGMA table_info([register]);   ---- for describing any table in SQLite3
+
+sqlite3 user_details.db;    ---- for creating a new database
+
+.open user_details.db;  ----- for opening an existing database

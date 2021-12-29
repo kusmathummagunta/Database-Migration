@@ -1,0 +1,33 @@
+1).open google chrome or any browser
+
+2). Login as admin user - usrname is - admin, pwd is - shruthi4321
+
+3). Create a new faculty or modify an existing faculty(delete it)
+
+4).  Login with created faculty username and password
+
+5). It goes into faculty home page
+
+6). Check for Assignments Inbox. If any are there download the submitted assignments and give grade
+
+7). Once grade is given to a student it appears as result in student login as well as faculty login. If wrong grade is given to any student delete and give the grade again.
+
+8). Third login type is student. the student has to register for logging in. go to http://localhost:8080 in th browser and it automatically shows a registration page. Register here and login using the username and password created by you in the registration page.
+
+9). Once you login as student, option for uploading assignments is available. upload your assignment in document or pdf or image format.
+
+10). view the uploaded document and to whom it has been routed will be shown here.
+
+
+11). All the three types of users can change their passwords in Change Password option of the respective menus of these three user types.
+
+
+
+
+
+Open Navicat Lite on desktop to see the tables used in the project.
+
+
+
+ALL THE BEST.......................................
+

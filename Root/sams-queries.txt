@@ -1,0 +1,50 @@
+CREATE TABLE `assig_files_desc` (
+  `file_desc` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sno` bigint(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `upload_date` date DEFAULT NULL,
+  `faculty` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `assig_files_path` (
+  `file_path` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sno` bigint(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `upload_date` date DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `faculty_details` (
+  `username` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `firstname` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `lastname` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `dept` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `subject` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `course` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+  
+CREATE TABLE `stud_details` (
+  `username` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `course` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `dept` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `secques` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `secans` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `stud_grades` (
+  `stud_id` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `grade` varchar(4) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `assig_name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `subject` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `result_date` date DEFAULT NULL,
+  `faculty` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sno` bigint(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
