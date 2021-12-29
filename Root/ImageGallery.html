@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+ <script type="text/javascript">
+  var folder = "../img/";
+
+$.ajax({
+    url : folder,
+    success: function (data) {
+        $(data).find("a").attr("href", function (i, val) {
+            if( val.match(/\.(jpe?g|png|gif|JPG|jpg)$/) ) { 
+                $("body").append( "<img src='"+ folder + val +"'>" );
+            } 
+        });
+    }
+});
+  </script>
+ </head>
+ <body>
+  <a href="">Click Here</a>
+ </body>
+</html>

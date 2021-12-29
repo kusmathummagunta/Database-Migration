@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Login Page </title>
+  <style>
+   body{background-image:url("pqr.png");}
+  </style>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="bootstrap.min.js"> </script>
+<!-- AJAX stands for Asynchronous Javascript and XML. It is required for JQuery-->
+  <script src="jquery.min.js"></script>
+ </head>
+
+ <body bgcolor="lightyellow">
+ <form id="loginxml_form"   action="LoginXML.jsp"  method="POST">
+		<center><h2><font color="lightred" size="36">Voice Based XML DB Migration - Admin</font></h2></center>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ 
+ <table class="table-responsive" align="center">
+ <tr>
+<td><img src="mysql.jpg" class="img-rect"  width="200" height="200"></td>
+<td><img src="postgresql.png" class="img-rect"  width="200" height="200"></td>
+<td><img src="SQLite3.png" class="img-rect" width="200" height="200"></td>
+<td><img src="Access.jpg" class="img-rect" width="200" height="200"/></td>
+</tr>
+ </table>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+  <table class="table-responsive table-bordered" align="center" bgcolor="lightblue" valign="center">
+  <tr>
+  <td>
+   <font color="blue"><b>Username :</b></font>
+  </td>
+  <td>
+  <input type="text" name="username" id="username"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <font color="blue"><b>Password :</b></font>
+  </td>
+  <td>
+  <input type="password" name="password" id="password"/>
+  </td>
+ </tr>
+<tr>
+  <td>
+   
+  </td>
+  <td>
+  <input type="submit" value="Login"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"/>
+  </td>
+ </tr>
+ </table>
+<br>
+
+ </form>
+ </body>
+</html>
